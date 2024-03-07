@@ -1,0 +1,45 @@
+@import "./modules/resets.css";
+@import "./modules/variables.css";
+@import "./modules/index.css";
+
+[data-container] {
+  box-sizing: border-box;
+  padding: 0 1rem;
+  margin: 0 auto;
+  width: min(100rem, 100%);
+}
+
+[data-button] {
+  background: var(--main-text-color);
+  border-radius: 0.6rem;
+  border: none;
+  color: var(--main-bg-color);
+  cursor: pointer;
+  font-size: 0.9rem;
+  min-height: 2rem;
+  width: min(10rem, 100%);
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+[data-button]:hover {
+  opacity: 0.6;
+  transition: opacity ease-in 300ms;
+}
+
+* {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+html,
+body {
+  background: var(--main-bg-color);
+}
